@@ -1,0 +1,108 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto',serif;/* Default font */
+    background-color: #f4f4f4;
+}
+
+/* Add custom font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section with Background Image */
+.hero {
+    height: 100vh;
+    background-image: url('https://t4.ftcdn.net/jpg/02/78/69/37/360_F_278693728_O7t0fe2oDwwucHisBR1i8UhVxE5N229G.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Increase size for Restaurant Name */
+.hero .content h1 {
+    font-size: 80px; /* Increase font size */
+    font-family: 'Roboto', sans-serif; /* Custom font for restaurant name */
+    font-weight: bold;
+    margin-bottom: 30px; /* Increase margin */
+}
+
+/* Increase line size and customize color */
+.hero hr {
+    width: 120px; /* Increase line length */
+    border: 3px solid #ff6347; /* Change line color */
+    margin-top: 20px; /* Increase space above the line */
+}
+
+/* Increase size for other texts in the page */
+nav ul li a {
+    font-size: 20px; /* Larger navigation text */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Order Now Button */
+.order-now-btn {
+    background-color: #ff6347; /* Tomato red */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.order-now-btn:hover {
+    background-color: #e5533c; /* Darker red on hover */
+}

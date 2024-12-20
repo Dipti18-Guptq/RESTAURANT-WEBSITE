@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylrfeedback.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Your Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this to your existing CSS */
+        .message-sent {
+            margin-top: 15px;
+            font-size: 1.2em;
+            color: #28a745; /* Green color for success message */
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-section">
+        <div class="feedback-form">
+            <h1>We Value Your Feedback!</h1>
+            <p>Please let us know about your experience.</p>
+            <form id="feedbackForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" placeholder="Share your experience" required></textarea>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+            <!-- Success Message -->
+            <div class="message-sent" id="messageSent">Message Sent! Thank you!!.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            
+           
+            const messageSentDiv = document.getElementById("messageSent");
+            messageSentDiv.style.display = "block";
+
+            
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/premium-photo/indian-hindu-veg-thali-restaurant-style-complete-food-platter-lunch-dinner_960396-561371.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Dark transparent background */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(247, 240, 240);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #160b09; /* Tomato color */
+}
+.box{
+    background-color: #a79b9b;
+    border: 20px solid black;
+    border-radius: 4%;
+    height: 20%;
+}
+.menu-header {
+    text-align: center;
+    padding: 100px 20px 30px;
+    color: rgb(241, 233, 233);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.menu-header h1 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.menu-header hr {
+    width: 60px;
+    border: 3px solid #a79b9b;
+    margin-top: 10px;
+}
+
+.menu-header p {
+    font-size: 20px;
+    color: #f3efef;
+}
+
+.menu-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-category {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-category ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-category ul li:last-child {
+    border-bottom: none;
+}
+
+.dish-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    flex: 2;
+}
+
+.dish-description {
+    font-size: 16px;
+    color: #777;
+    flex: 3;
+    margin-left: 20px;
+}
+
+.dish-price {
+    font-size: 18px;
+    color: #ff6347;
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Hover effect for each item */
+.menu-category ul li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
